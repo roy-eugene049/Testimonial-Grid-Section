@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #edf2f8;
+}
+
+.container .card{
+    display: grid;
+    width: 1140px;
+    height: 575px;
+    border-radius: 10px;
+    gap: 25px;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+
+    grid-template-areas: 
+    'card1 card1 card2 card3' 
+    "card4 card5 card5 card3";
+    
+
+}
+
+.container .card .item{
+    
+    padding: 23px 35px 31px 30px;
+    border-radius:10px ;
+
+}
+
+
+.container .card .card-1{
+    position: relative;
+    grid-area: card1;
+    background-color: #733ec9;
+
+}
+
+
+.container .card .item .avatar{
+    display: flex;
+}
+
+
+.container .card .item .avatar img , .container .card .card-5 .avatar .imgcard2{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 20px;
+    border: 2px solid #a47fd3;
+}
+
+.container .card .item .avatar .textAvatar{
+    margin-top: 2px;
+}
+
+.container .card .item .avatar .textname{
+    
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    
+
+}
+
+.container .card .item .avatar .textgraduate{
+
+    color: hsla(0, 0%, 100%, 0.500);
+    font-size: 13px;
+
+}
+
+
+.container .card .item .textcard .titlecard{
+    position: relative;
+    font-weight: 500;
+    padding: 20px 0px 20px 0px;
+    color:hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
+
+.container .card .item .textcard .pcard{
+    color:hsla(0, 0%, 100%, 0.756);
+    width: 95%;
+    font-size: 13px;
+}
+
+
+.container .card .card-1 .quote{
+    
+    position: absolute;
+    top: 0;
+    right: 0%;
+    bottom:0;
+    left: 63%;
+}
+
+
+
+
+.container .card .card-2{
+    grid-area: card2;
+    background-color: #49556b;
+}
+
+
+
+.container .card .item .avatar .imgcard2{
+    border: none;
+}
+
+
+.container .card .card-3{
+    grid-area: card3;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px #d1d8e07c;
+}
+
+
+
+.container .card .card-3 .avatar .textAvatar .textname{
+    color: #525961;
+
+}
+
+.container .card .card-3 .avatar .textAvatar .textgraduate{
+    color:#52596192;
+}
+
+.container .card .card-3 .textcard .titlecard{
+    color:#4f565e;
+}
+
+
+.container .card .card-3 .textcard .pcard{
+    color:#4f565ec1;
+}
+
+
+
+
+.container .card .card-4{
+    grid-area:card4;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px #d1d8e07c;
+
+}
+
+
+.container .card .card-4 .avatar .textAvatar .textname{
+    color: #525961;
+
+}
+
+.container .card .card-4 .avatar .textAvatar .textgraduate{
+    color:#52596192;
+}
+.container .card .card-4 .textcard .titlecard{
+    width: 90%;
+    color:#4f565e;
+}
+
+
+.container .card .card-4 .textcard .pcard{
+    color:#4f565ec1;
+}
+
+
+.container .card .card-5{
+    grid-area: card5;
+    background-color: #18202d;
+}
+
+.container .card .card-5 .avatar .imgcard2{
+    border: 2px solid #a47fd3;
+}
+
+
+.container .attribution{
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+
+@media  screen and (max-width: 1228px) {
+
+    .container{
+        padding:50px 0px 50px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .container .card{
+
+        height: 930px;
+        width: 687px;
+        
+
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "card1 card5"
+                             "card1 card5"
+                             "card2 card3"
+                             "card4 card3";
+    
+    
+    
+    }
+}
+
+
+@media  screen and (max-width: 760px) {
+
+    .container{
+        padding:50px 0px 50px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .container .card{
+
+        height: 1890px;
+        width: 340px;
+        
+
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: "card1"
+                             "card2"
+                             "card5"
+                             "card4"
+                             "card3";
+    
+    
+    
+    }
+}
